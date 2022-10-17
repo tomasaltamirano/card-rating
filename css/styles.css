@@ -49,19 +49,10 @@ body{
     background: var(--background-container);
     border-radius: 24px;
     padding: 0 30px;
-    
+
 }
 
-.gratitude-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 340px;
-    width: 340px;
-    border-radius: 24px;
-    display: none;
-}
+
 
 .star{
     display: flex;
@@ -138,4 +129,74 @@ body{
 .enviar:active{
     color: var(--Orange);
     background: var(--White);
+}
+
+.gratitude-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 360px;
+    width: 360px;
+    padding: 0 32px;
+    border-radius: 24px;
+    background: var(--background-container);
+    display: none;
+    
+}
+
+.thanks-img{
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.thanks-img img{
+    width: 80%;
+    vertical-align: top;
+}
+
+.text-thanks{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.text-thanks h1{
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.text-thanks p{
+    font-size: 1.4rem;
+    color: var(--Light-Grey);
+}
+
+.select{
+    text-align: center;;
+    font-size: 2.1rem;
+    background: var(--star);
+    padding: 8px;
+    border-radius: 50px;
+    color: var(--Orange);
+}
+
+#rating{
+    font-size: 1.3rem;
+}
+
+.arrow{
+    transform: translate(-25px, 0px);
+    font-size: 2.3rem;
+    background: var(--star);
+    border-radius: 50px;
+    padding: 6px;
+    text-align: center;
+}
+
+.arrow:hover{
+    background: var(--Orange);
+    cursor: pointer;
 }

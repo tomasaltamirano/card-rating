@@ -6,13 +6,17 @@
 		<title>Interactive rating component</title>
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="icon" type="image/png" href="img/favicon-32x32.png" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
 	</head>
 	<body>
 		<section class="default-container">
-				<div class="star">
-					<img src="img/icon-star.svg" alt="" />
-				</div>
-	
+			<div class="star">
+				<img src="img/icon-star.svg" alt="" />
+			</div>
+
 			<div class="text-buttons">
 				<h1>How did we do?</h1>
 				<p>
@@ -20,7 +24,7 @@
 					is appreciated to help us improve our offering!
 				</p>
 			</div>
-			
+
 			<div class="buttons">
 				<ul>
 					<li class="numeros">1</li>
@@ -30,13 +34,16 @@
 					<li class="numeros">5</li>
 				</ul>
 			</div>
-			<button class="enviar">submit</button>
-			
+			<button class="enviar" id="enviar">submit</button>
 		</section>
 
 		<section class="gratitude-container">
 			<div class="thanks-img">
+				<i class="bx bx-left-arrow-alt arrow" id="back"></i>
 				<img src="img/illustration-thank-you.svg" alt="" />
+			</div>
+			<div class="select">
+				<p>You selected <span id="rating"></span> out 5</p>
 			</div>
 			<div class="text-thanks">
 				<h1>Thank you!</h1>
@@ -48,5 +55,7 @@
 		</section>
 
 		<script src="js/main.js"></script>
+
+		<!-- boxicons-->
 	</body>
 </html>
